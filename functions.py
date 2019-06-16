@@ -24,4 +24,3 @@ def get_lyrics(user):
         return 'No lyrics found'
 
 
-print(get_lyrics('RedJin'))
