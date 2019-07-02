@@ -1,0 +1,15 @@
+{%- extends "base.html" %}
+
+{% import "bootstrap/utils.html" as utils %}
+
+{% block content %}
+    <div class="container">
+        <div class="lyrics">
+            <h2>{{artist}}—{{song}}</h2>
+            {% for row in lyrics %}
+                {{row}}
+                <br>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

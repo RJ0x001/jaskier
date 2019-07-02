@@ -1,0 +1,13 @@
+{%- extends "base.html" %}
+
+{% import "bootstrap/utils.html" as utils %}
+
+{% block content %}
+    <div class="container">
+        <div>
+            <h1>Enter your Last.fm username</h1>
+        </div>
+        <div>
+            {{wtf.quick_form(form, novalidate=True)}}
+        </div>
+    </div>
