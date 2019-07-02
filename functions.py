@@ -5,7 +5,10 @@ from bs4 import BeautifulSoup
 def get_lyrics(user):
     last = requests.get('https://www.last.fm/user/%s' % user)
     soup = BeautifulSoup(last.content, "lxml")
-    chart = soup.find('td', 'chartlist-name').findAll('a')
+    try:
+        chart = soup.find('td', 'chartlist-name').findAll('a')
+    except AttributeError:
+        pass
     c, content = 0, ''
     for x in chart:
         if c == 1:

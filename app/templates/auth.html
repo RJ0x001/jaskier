@@ -3,11 +3,11 @@
 {% import "bootstrap/utils.html" as utils %}
 
 {% block content %}
-    <div class="container">
-        <div>
-            <h1>Enter your Last.fm username</h1>
+    <div class="contanier">
+        <form method="post" class="form-input">
+            <h2 class="form-input-heading">Tell your Last.fm username</h2>
+        <input name="username" type="text" id="url" class="input-block-level"/>
+        <button class="btn btn-large btn-primary" type="submit" >Jump to jaskier</button>
+        </form>
         </div>
-        <div>
-            {{wtf.quick_form(form, novalidate=True)}}
-        </div>
-    </div>
+{% endblock %}
