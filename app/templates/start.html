@@ -1,0 +1,14 @@
+{%- extends "base.html" %}
+
+{% import "bootstrap/utils.html" as utils %}
+
+{% block content %}
+
+<div class="login">
+        <h1>Login</h1>
+        <form method="post">
+            <input name="username" type="text" id="username" class="input-block-level" placeholder="username" required="required"/>
+            <button class="btn btn-primary btn-block btn-large" type="submit" >Jump in jaskier</button>
+        </form>
+</div>
+{% endblock %}

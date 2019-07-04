@@ -1,4 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
-<h3>No lyrics found for {{artist}}—{{song}}</h3>
+<div class="error">
+    <h3>{{error_msg}}</h3>
+    <a href="http://127.0.0.1:5000/start/">Back to starting page</a>
+</div>
 {% endblock %}
